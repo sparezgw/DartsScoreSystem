@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="us">
+<head>
+  <meta charset="utf-8">
+  <title>Dart Score Panel</title>
+  <link href="jquery-ui.min.css" rel="stylesheet">
+  <style type="text/css">
+  body{
+    font: 80% "Trebuchet MS", sans-serif;
+    margin: 30px;
+  }
+  .list {
+    width: 22%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin-right: 1%;
+  }
+  .list h3 {
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+    display: block;
+  }
+  .list table {
+    margin-left: 5px;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  #radio {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #sc {
+    text-align: center;
+    font-size: initial;
+  }
+  #sc input {
+    width: 55px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .red {
+  	color: red;
+  }
+  #sum {
+    font-weight: bold;
+  }
+  .button {
+  	display: none;
+  	margin-top: 10px;
+  }
+  </style>
+</head>
+<body>
+  <h1>Welcome to TFLS<span>::</span>IT Dept. Dart Match!</h1>
+  <div class="ui-widget-content ui-corner-all list" style="display: block;">
+    <h3 class="ui-widget-header ui-corner-all ui-button" data-id="0">Zhao Xin</h3>
+    <h1>501</h1>
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+    <button class="button">Cancel</button>
+  </div>
+  <div class="ui-widget-content ui-corner-all list" style="display: block;">
+    <h3 class="ui-widget-header ui-corner-all ui-button" data-id="1">Zhao Guowei</h3>
+    <h1>501</h1>
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+    <button class="button">Cancel</button>
+  </div>
+  <div class="ui-widget-content ui-corner-all list" style="display: block;">
+    <h3 class="ui-widget-header ui-corner-all ui-button" data-id="2">#3</h3>
+    <h1>501</h1>
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+    <button class="button">Cancel</button>
+  </div>
+  <div class="ui-widget-content ui-corner-all list" style="display: block;">
+    <h3 class="ui-widget-header ui-corner-all ui-button" data-id="3">#4</h3>
+    <h1>501</h1>
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+    <button class="button">Cancel</button>
+  </div>
+
+  <div id="score" title="Score Panel...">
+    <p>Total: <span id="sum">0</span> >> <span id="tips">-</span></p>
+    <form>
+      <div id="radio">
+        <input type="radio" id="m1" name="multi" value="1" checked><label for="m1">Single</label>
+        <input type="radio" id="m2" name="multi" value="2"><label for="m2">Double</label>
+        <input type="radio" id="m3" name="multi" value="3"><label for="m3">Triple</label>
+      </div>
+      <div id="sc">
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="button" value="3">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input type="button" value="10">
+        <input type="button" value="11">
+        <input type="button" value="12">
+        <input type="button" value="13">
+        <input type="button" value="14">
+        <input type="button" value="15">
+        <input type="button" value="16">
+        <input type="button" value="17">
+        <input type="button" value="18">
+        <input type="button" value="19">
+        <input type="button" value="20">
+        <input type="button" value="25">
+        <input type="button" value="50">
+      </div>
+    </form>
+  </div>
+
+  <div id="name" title="Change Name...">
+    <form>
+      <input type="text" value="Zhao Xin">
+      <input type="text" value="Zhao Guowei">
+      <input type="text" value="#3">
+      <input type="text" value="#4">
+    </form>
+  </div>
+  <div id="total" title="Change Total Score...">
+    <form>
+      <input type="text" value="501">
+    </form>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="main.min.js"></script>
+</body>
+</html>
